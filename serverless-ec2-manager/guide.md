@@ -62,9 +62,15 @@ The solution consists of:
 2. **Upload CloudFormation Template**
    - Open the [AWS CloudFormation Console](https://console.aws.amazon.com/cloudformation)
    - Click "Create stack" > "With new resources (standard)"
+
+![image](https://github.com/user-attachments/assets/ae6fc008-d16d-4a0c-9bae-a9791353275c)
+
+
    - Select "Upload a template file"
    - Click "Choose file" and select `cloudformation/ec2-scheduler.yaml` from the cloned repository
    - Click "Next"
+
+![image](https://github.com/user-attachments/assets/8043cfa0-585e-44a2-81ec-81cd13bc69f9)
 
 3. **Configure Stack Parameters**
    - Stack name: `EC2-Auto-Scheduler` (or your preferred name)
@@ -72,14 +78,20 @@ The solution consists of:
    - TargetEnvironments: Leave as default (`test,dev`) or customize
    - Click "Next"
 
+![image](https://github.com/user-attachments/assets/cd15dc44-303c-4ff5-992a-6c86e50f1807)
+
 4. **Configure Stack Options**
    - Add any tags if desired (optional)
+   - Check the box acknowledging IAM resource creation
    - Click "Next"
+
+![image](https://github.com/user-attachments/assets/5da63d37-cf41-464d-b5a9-784f2b64f798)
 
 5. **Review and Create**
    - Review all settings
-   - Check the box acknowledging IAM resource creation
-   - Click "Create stack"
+   - Click "Submit"
+
+![image](https://github.com/user-attachments/assets/3ff5e7ca-4973-498f-89c0-b63aeb0d5646)
 
 6. **Confirm Subscription**
    - Check your email for an AWS SNS subscription confirmation
@@ -106,6 +118,8 @@ The solution consists of:
    - Check your email for an AWS SNS subscription confirmation
    - Click the "Confirm subscription" link in the email
 
+![image](https://github.com/user-attachments/assets/d8b8cad1-6b76-4d0b-9c93-a5fa553167d0)
+
 ## Testing
 
 ### Method 1: Using the AWS Console
@@ -113,6 +127,9 @@ The solution consists of:
 1. **Access the Lambda Function**
    - Open the [AWS Lambda Console](https://console.aws.amazon.com/lambda)
    - Find and select the function named `EC2-Auto-Scheduler`
+
+![image](https://github.com/user-attachments/assets/47e5b07c-3f19-4cf8-8095-670f8884a519)
+
    - Go to the "Test" tab
 
 2. **Create Test Events**
@@ -127,7 +144,9 @@ The solution consists of:
      }
      ```
    - Click "Save"
-   
+
+![image](https://github.com/user-attachments/assets/41be8e02-19cf-4aae-88b4-6ead106aad6e)
+
    Create a "Stop" test event:
    - Click "Create new event"
    - Event name: `StopTest`
@@ -139,10 +158,17 @@ The solution consists of:
      ```
    - Click "Save"
 
-3. **Execute Tests**
+![image](https://github.com/user-attachments/assets/46b35723-6e7f-4e6c-99ab-b801ea0c48a8)
+
+2. **Execute Tests**
    - Select the test event you want to run
    - Click "Test" button
+
+![image](https://github.com/user-attachments/assets/7fe08a26-280d-4015-baf4-747bc7d91035)
+
    - View the execution results and check your email for notifications
+
+![image](https://github.com/user-attachments/assets/47b3baf6-15e5-4af4-9b5d-9745f7deb148)
 
 ### Method 2: Using AWS CLI
 
@@ -221,7 +247,12 @@ After changing, update the Lambda function:
 1. Open the [CloudWatch Console](https://console.aws.amazon.com/cloudwatch)
 2. Go to "Logs" > "Log groups"
 3. Find and select `/aws/lambda/EC2-Auto-Scheduler`
+
+![image](https://github.com/user-attachments/assets/43c7d77a-0a5a-4d3e-bfd0-ffb808995c43)
+
 4. View the latest log stream for execution details
+
+![image](https://github.com/user-attachments/assets/bab82765-3fc8-4e78-aa4d-a150b614f597)
 
 ## Security Considerations
 
