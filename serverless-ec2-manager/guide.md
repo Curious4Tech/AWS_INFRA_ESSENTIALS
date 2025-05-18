@@ -2,10 +2,6 @@
 
 A cost-saving solution that automatically shuts down test and development EC2 instances during non-working hours and restarts them when needed.
 
-
-![image](https://github.com/user-attachments/assets/bb84444c-f000-4721-9f7e-7bc35bc03343)
-
-
 ## Overview
 
 This repository contains a complete AWS solution for automatically managing EC2 instances based on tags. The scheduler:
@@ -37,7 +33,7 @@ This repository contains a complete AWS solution for automatically managing EC2 
 
 ## Architecture
 
-![Architecture Diagram](https://example.com/architecture-diagram.png)
+![image](https://github.com/user-attachments/assets/bb84444c-f000-4721-9f7e-7bc35bc03343)
 
 The solution consists of:
 
