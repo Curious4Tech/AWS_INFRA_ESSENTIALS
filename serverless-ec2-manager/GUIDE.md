@@ -57,7 +57,7 @@ The solution consists of:
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/Curious4Tech/AWS_INFRA_ESSENTIALS.git
-   cd serverless-ec2-manager
+   cd AWS_INFRA_ESSENTIALS/serverless-ec2-manager
    ```
 
 2. **Upload CloudFormation Template**
@@ -103,7 +103,7 @@ The solution consists of:
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/Curious4Tech/AWS_INFRA_ESSENTIALS.git
-   cd serverless-ec2-manager
+   cd AWS_INFRA_ESSENTIALS/serverless-ec2-manager
    ```
 
 2. **Deploy Using AWS CLI**
