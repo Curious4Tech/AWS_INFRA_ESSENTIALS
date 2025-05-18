@@ -41,6 +41,7 @@ The solution consists of:
 2. **SNS Topic**: Communication channel for email notifications
 3. **EventBridge Rules**: Schedule triggers for automated execution
 4. **IAM Role**: Securely scoped permissions for Lambda execution
+5. **CloudWatch**: All function activity is logged
 
 ## Prerequisites
 
