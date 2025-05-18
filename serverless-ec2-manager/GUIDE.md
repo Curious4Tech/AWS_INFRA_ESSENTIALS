@@ -56,8 +56,8 @@ The solution consists of:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/aws-ec2-auto-scheduler.git
-   cd aws-ec2-auto-scheduler
+   git clone https://github.com/Curious4Tech/AWS_INFRA_ESSENTIALS.git
+   cd serverless-ec2-manager
    ```
 
 2. **Upload CloudFormation Template**
@@ -68,7 +68,7 @@ The solution consists of:
 
 
    - Select "Upload a template file"
-   - Click "Choose file" and select `cloudformation/ec2-scheduler.yaml` from the cloned repository
+   - Click "Choose file" and select `serverless-ec2-manager/ec2-scheduler.yaml` from the cloned repository
    - Click "Next"
 
 ![image](https://github.com/user-attachments/assets/8043cfa0-585e-44a2-81ec-81cd13bc69f9)
@@ -102,15 +102,15 @@ The solution consists of:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/aws-ec2-auto-scheduler.git
-   cd aws-ec2-auto-scheduler
+   git clone https://github.com/Curious4Tech/AWS_INFRA_ESSENTIALS.git
+   cd serverless-ec2-manager
    ```
 
 2. **Deploy Using AWS CLI**
    ```bash
    aws cloudformation create-stack \
      --stack-name EC2-Auto-Scheduler \
-     --template-body file://cloudformation/ec2-scheduler.yaml \
+     --template-body file://serverless-ec2-manager/ec2-scheduler.yaml \
      --parameters ParameterKey=EmailAddress,ParameterValue=your-email@example.com \
      --capabilities CAPABILITY_IAM
    ```
