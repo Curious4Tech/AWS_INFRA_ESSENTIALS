@@ -98,6 +98,8 @@ The solution consists of:
    - Check your email for an AWS SNS subscription confirmation
    - Click the "Confirm subscription" link in the email
 
+![image](https://github.com/user-attachments/assets/810a0625-b85a-474a-83b3-284624dd4ea3)
+
 ### Method 2: Using AWS CLI
 
 1. **Clone the Repository**
