@@ -3,7 +3,8 @@
 A cost-saving solution that automatically shuts down test and development EC2 instances during non-working hours and restarts them when needed.
 
 
-![image](https://github.com/user-attachments/assets/0c830382-e05e-4297-b235-223835e797ee)
+![image](https://github.com/user-attachments/assets/bb84444c-f000-4721-9f7e-7bc35bc03343)
+
 
 ## Overview
 
